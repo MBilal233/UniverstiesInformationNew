@@ -1,0 +1,197 @@
+.container-fluid {
+  width: 90vw;
+  padding: 0 0;
+  overflow: auto;
+  margin: 20px 0;
+  border-radius: 5px;
+  height: 350px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+table {
+  width: 100%;
+  /* margin: 30px 0; */
+  border-collapse: collapse;
+  height: 100%;
+  border-radius: 5px;
+}
+th {
+  background-color: #00ffb7;
+  padding: 17px 0;
+  color: black;
+  font-size: 19px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+}
+td {
+  padding: 15px 10px;
+  text-align: center;
+  /* margin: 2px; */
+}
+tr {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+tr:hover td {
+  color: #00ffb7;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+/* tr:nth-of-type(1){
+    background-color: red;
+} */
+select {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.10);
+  padding: 10px 10px;
+  color: #00fffb;
+}
+
+.selection {
+  text-align: center;
+}
+
+.page-link {
+  cursor: pointer;
+}
+.page-link:hover,
+.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.loaderFalse {
+  display: none;
+}
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.297);
+  border-radius: 50%;
+  position: relative;
+  /* animation: myAnimation 3s linear infinite forwards; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+.loaderTrue {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #00ffb7;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 999999999999;
+}
+.pagination {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+/* Firefox */
+.container-fluid,table{
+  scrollbar-width: thin;
+  scrollbar-color: #00ffb7 #dfe9eb;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 1px;
+  background-color: #dfe9eb;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #b8c0c2;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #b8c0c2;
+}
+
+*::-webkit-scrollbar-thumb {
+  /* border-radius: 5px; */
+  background-color: #00fffb;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #00fffb;
+}
+
+/* *::-webkit-scrollbar-thumb:active {
+  background-color: #62a34b;
+} */
+
+/* .page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.page li{
+    list-style: none;
+}
+.page li a{
+    background-color: #00ffb7 !important;
+} */
+.activeItemClassName {
+  background-color: #00ffb7 !important;
+}
+
+.pageItemClassName {
+  list-style: none;
+  padding: 7px 0;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+.pageLinkClassName {
+  padding: 0 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.511) !important;
+}
+.pageLinkClassName:hover {
+  color: black;
+}
+.navClassName {
+  cursor: pointer;
+}
+.pageItemClassName:hover {
+  background-color: #00ffb74d;
+}
+
+.ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+}
+
+.numberSelection{
+    text-align: start !important;
+}
+
+
+@media screen and (max-width:767px) {
+  td{
+    font-size: 15px;
+  }
+  th{
+    font-size: 17px;
+  }
+}
+
+h4{
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+}
